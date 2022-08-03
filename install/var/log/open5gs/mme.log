@@ -1,0 +1,4 @@
+Open5GS daemon v2.0.11
+
+08/04 00:30:06.540: [app] INFO: Configuration: '/home/mazay/Git/open5gs-mazay/install/etc/open5gs/mme.yaml' (../src/main.c:54)
+08/04 00:30:06.540: [app] INFO: File Logging: '/home/mazay/Git/open5gs-mazay/install/var/log/open5gs/mme.log' (../src/main.c:57)
