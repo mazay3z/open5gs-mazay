@@ -1568,6 +1568,29 @@ int mme_fd_init(void)
 	ret = fd_disp_app_support(ogs_diam_s6a_application, ogs_diam_vendor, 1, 0);
     ogs_assert(ret == 0);
 
+    /* Set the Auth-Application-Id AVP */
+    /*
+    struct avp *avp;
+    union avp_value val;
+    struct msg *ans, *qry;
+    */
+    /* Create answer header */
+    /*struct msg **msg;*/
+    
+    /*qry = *msg;*/
+    /*
+    ret = fd_msg_new_answer_from_req(fd_g_config->cnf_dict, msg, 0);
+    ogs_assert(ret == 0);
+    ans = *msg;
+
+    ret = fd_msg_avp_new(ogs_diam_auth_application_id, 0, &avp);
+    ogs_assert(ret == 0);
+    val.i32 = OGS_DIAM_S6A_APPLICATION_ID;
+    ret = fd_msg_avp_setvalue(avp, &val);
+    ogs_assert(ret == 0);
+    ret = fd_msg_avp_add(ans, MSG_BRW_PARENT, avp);
+    ogs_assert(ret == 0);
+    */
     ret = ogs_diam_start();
     ogs_assert(ret == 0);
 	
